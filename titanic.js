@@ -41,8 +41,8 @@ function addToTitanic(passenger) {
     let tdSurvived = document.createElement('td');
     tdName.textContent = passenger.name;
     tdGender.textContent = passenger.gender;
-    tdAge.textContent = passenger.age;
-    tdSurvived.textContent = passenger.survived;
+    tdAge.textContent = Math.ceil(passenger.age);
+    tdSurvived.textContent = passenger.survived ? "SURVIVED" : "NOT SURVIVED";
     tr.append(tdName);
     tr.append(tdGender);
     tr.append(tdAge);
