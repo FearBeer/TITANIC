@@ -6,28 +6,46 @@
 
 html, body {
     width: 100%;
-    height: 100%;
-} 
+    height: 100%;  
+    background-color: lightgrey;  
+}
 
 .container {
-   
     width: 80%;
     height: 100%;
-   
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     align-items: center;
 }
 
 .search {
     width: 90%;
-    padding: 10px;
+    padding: 15px;
     background-color: cadetblue;
-    min-height: 50px;
+    min-height: 70px;
     display: flex;
     justify-content: space-around;
+    
+}
+
+.search__error {
+    animation: error 2s infinite;
+}
+
+@keyframes error {
+    0% {
+        background-color: cadetblue;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: cadetblue;
+    }
 }
 
 .search__input {
@@ -43,8 +61,6 @@ html, body {
 .passengers {
     width: 100%;
     padding: 10px;
-
-    height: 100%;
     display: flex;
     gap: 5px;
     flex-direction: column;
@@ -52,19 +68,20 @@ html, body {
 
 }
 
-
-
-
 table {
+    border: 4px solid rgb(0, 0, 0);
     width: 80%;
     border-collapse: collapse;
 }
 
+
 th, tr , td {
-    padding: 2px;
-    border: 2px black solid;
-    
+    padding: 10px;
+    border: 3px black solid;
+    height: 40px; 
+    font-size: 20px;   
 }
+
 
 
 
