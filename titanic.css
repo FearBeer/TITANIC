@@ -26,11 +26,7 @@ html, body {
     padding: 15px;
     background-color: cadetblue;
     border-radius: 10px;
-<<<<<<< HEAD
     height: 70px;
-=======
-    min-height: 70px;
->>>>>>> f45ce7fb2e21c548aedea775d47f63750c73f753
     display: flex;
     justify-content: space-around;
     
